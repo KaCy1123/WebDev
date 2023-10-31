@@ -1,6 +1,3 @@
-/**
- * 
- */
 function PerformCalc()
 {
 	return (2 + 3);
