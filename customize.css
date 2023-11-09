@@ -1,10 +1,20 @@
-@charset "ISO-8859-1";
-body
-{
-	background-color: blue;
-}
 h1
 {
-	color:white;
-	margin-left: 40px;
+	font-family: Cambria;
+	text-align: center;
+}
+
+label
+{
+	display: inline-block;
+	width: 175px;
+	font-family: Cambria;
+	text-align: left;
+}
+
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
