@@ -15,6 +15,7 @@ function addListener()
 	document.getElementById("btntwo").addEventListener("click",inputtwo);
 	document.getElementById("btnthree").addEventListener("click",inputthree);
 	document.getElementById("btnzero").addEventListener("click",inputzero);
+	document.getElementById("btnclear").addEventListener("click",clear);
 }
 function inputseven()
 {
@@ -65,4 +66,9 @@ function inputzero()
 {
 	zero = document.getElementById("btnzero").textContent;
 	document.getElementById("lblfullbtns").textContent += zero
+}
+function clear()
+{
+	clear = document.getElementById("btnclear").textContent;
+	document.getElementById("lblfullbtns").textContent = ""
 }

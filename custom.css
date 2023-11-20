@@ -3,15 +3,17 @@ button{
 	height: 40px;
 	background-color: lavender;
 	border-color: mediumpurple;
+	margin-top: 4px;
 }
-#btnzero{
-	width: 128px;
+#btnequal,#btnclear{
+	width: 84px
 }
-label{
-	border: solid;
-	border-width: .5px;
-	padding-left: 10px;
-	padding-right: 10px;
+#lblfullbtns{
+	border: outset;
+	border-color: mediumpurple;
+	background-color: lavender;
+	border-width: 2px;
+	padding-right: 168px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
