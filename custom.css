@@ -5,9 +5,15 @@ button{
 	border-color: mediumpurple;
 	margin-top: 4px;
 }
-#btnequal,#btnclear{
+
+table, tr{
+	border: 1px solid red
+}
+
+#btnequal, #btnclear{
 	width: 84px
 }
+
 #lblfullbtns{
 	border: outset;
 	border-color: mediumpurple;
@@ -16,4 +22,8 @@ button{
 	padding-right: 168px;
 	padding-top: 2px;
 	padding-bottom: 2px;
+}
+
+#input1, #input2{
+	display: ;	
 }

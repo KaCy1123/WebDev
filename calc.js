@@ -1,19 +1,8 @@
 /**
  * 
  */
-window.addEventListener("load",initvar);
-function initvar()
-{
-	var input, numcreate, num1, num2, numfinal, operation;
-	
-	input = ""; //GET RID OF THIS SHIT STORE IT IN A LABEL FUCKER
-	numcreate = "";
-	num1 = "";
-	num2 = "";
-	numfinal = "";
-	operation = "";
-	addListener()
-}
+window.addEventListener("load",addListener);
+
 function addListener()
 {
 	document.getElementById("btnseven").addEventListener("click",inputseven);
@@ -37,10 +26,15 @@ function addListener()
 }
 function inputseven()
 {
-	var input, numcreate;
-	
+	var input;
 	input = document.getElementById("btnseven").textContent;
-	numcreate += input;
-	alert(numcreate);
-	document.getElementById("lblfullbtns").textContent = numcreate;
+	document.getElementById("lblfullbtns").textContent += input;
+}
+function opadd()
+{
+	alert("hi")
+	var input;
+	input = document.getElementById("btnadd").textContent;
+	document.getElementById("op").textContent = input;
+	document.getElementById("input1").textContent = document.getElementById("lblfullbtns").textContent
 }
