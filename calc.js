@@ -1,6 +1,3 @@
-/**
- * 
- */
 window.addEventListener("load",initCalc);
 window.addEventListener("load",addListener);
 
@@ -83,7 +80,7 @@ function opadd()
 	document.getElementById("btnadd").disabled = true;
 	document.getElementById("btnmult").disabled = true;
 	document.getElementById("btndiv").disabled = true;
-	document.getElementById("btndot").disabled = true;
+	document.getElementById("btndot").disabled = false;
 	document.getElementById("btnequal").disabled = true;
 }
 
@@ -132,7 +129,7 @@ function opsub()
 	document.getElementById("btnadd").disabled = true;
 	document.getElementById("btnmult").disabled = true;
 	document.getElementById("btndiv").disabled = true;
-	document.getElementById("btndot").disabled = true;
+	document.getElementById("btndot").disabled = false;
 	document.getElementById("btnequal").disabled = true;
 }
 
@@ -181,7 +178,7 @@ function opmult()
 	document.getElementById("btnadd").disabled = true;
 	document.getElementById("btnmult").disabled = true;
 	document.getElementById("btndiv").disabled = true;
-	document.getElementById("btndot").disabled = true;
+	document.getElementById("btndot").disabled = false;
 	document.getElementById("btnequal").disabled = true;
 }
 
@@ -206,6 +203,7 @@ function inputzero()
 	document.getElementById("btnadd").disabled = false;
 	document.getElementById("btnmult").disabled = false;
 	document.getElementById("btndiv").disabled = false;
+	document.getElementById("btndot").disabled = false;
 	document.getElementById("btnequal").disabled = false;
 }
 
@@ -247,7 +245,6 @@ function equal()
 	document.getElementById("btndot").disabled = false;
 	document.getElementById("btnequal").disabled = false;
 }
-
 function clear()
 {
 	var input;
