@@ -1,0 +1,51 @@
+body{
+	background-color: #FFB9B9;
+	color: #FF8DC7;
+	text-shadow: black 1px 1px 1px;
+}
+
+button{
+	color: #FF8DC7;
+	font-size: 40px;
+	text-shadow: black 1px 1px 2px;
+	width: 80px;
+	height: 80px;
+	background-color: #FFDDD2;
+	border-color: #FF8DC7;
+	margin-top: 4px;
+}
+
+table, td{
+	border: 2px outset #FF8DC7;
+	font-size: 35px;
+	background-color: #FFDDD2;
+}
+
+#TBLCAL{
+	border: none
+}
+
+#btnequal, #btnclear{
+	width: 168.75px
+}
+
+#lblfullbtns{
+	border: outset;
+	border-color: #FF8DC7;
+	background-color: #FFDDD2;
+	border-width: 2px;
+	padding-right: 340px;
+	padding-left: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#schedule{
+	border: 2px outset #FF8DC7;
+	font-size: 35px;
+	background-color: #FFDDD2;
+}
+
+#center{
+	text-align: center;
+}
