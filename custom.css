@@ -1,29 +1,51 @@
+body{
+	background-color: #FFB9B9;
+	color: #FF8DC7;
+	text-shadow: black 1px 1px 1px;
+}
+
 button{
-	width: 40px;
-	height: 40px;
-	background-color: lavender;
-	border-color: mediumpurple;
+	color: #FF8DC7;
+	font-size: 40px;
+	text-shadow: black 1px 1px 2px;
+	width: 80px;
+	height: 80px;
+	background-color: #FFDDD2;
+	border-color: #FF8DC7;
 	margin-top: 4px;
 }
 
-table, tr{
-	border: 1px solid red
+table, td{
+	border: 2px outset #FF8DC7;
+	font-size: 35px;
+	background-color: #FFDDD2;
+}
+
+#TBLCAL{
+	border: none
 }
 
 #btnequal, #btnclear{
-	width: 84px
+	width: 168.75px
 }
 
 #lblfullbtns{
 	border: outset;
-	border-color: mediumpurple;
-	background-color: lavender;
+	border-color: #FF8DC7;
+	background-color: #FFDDD2;
 	border-width: 2px;
-	padding-right: 168px;
+	padding-right: 340px;
+	padding-left: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
-#input1, #input2{
-	display: ;	
+#schedule{
+	border: 2px outset #FF8DC7;
+	font-size: 35px;
+	background-color: #FFDDD2;
+}
+
+#center{
+	text-align: center;
 }
