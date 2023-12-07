@@ -5,25 +5,20 @@
 	<script type="text/JavaScript" src="JS.js"></script>
 </head>
 <body>
-	<table id="tblFull">
+	<table>
 		<tr>
 			<th id="Header">User Information</th>
 		</tr>
 		<tr>
 			<td id="information">Inputs marked with * are required</td>
-		<tr>
+		</tr>
 		<tr id="rowfirstName">
 			<td id="input"><label for="inpfirstName" id="lblfirstName">*Input your first name: </label></td>
 			<td><input type="text" id="inpfirstName" autofocus></input></td>
-			<td>
-				<table>
-					<tr>hi</tr>
-				</table>
-			</td>
 		</tr>
 		<tr id="rowmiddleInit">
 			<td id="input"><label for="inpmiddleInit" id="lblmiddleInit">Input your middle initial: </label></td>
-			<td><input type="text" id="inpmiddleInit"></input></td>
+			<td><input type="text" id="inpmiddleInit" maxlength="1"></input></td>
 		</tr>
 		<tr id="rowlastName">
 			<td id="input"><label for="inplastName" id="lbllastName">*Input your last name: </label></td>
@@ -35,27 +30,126 @@
 		</tr>
 		<tr id="rowgradeLevel">
 			<td id="input"><label for="inpgradeLevel" id="lblgradeLevel">*Input your grade level: </label></td>
-			<td><input type="number" id="inpgradeLevel"></input></td>
+			<td><input type="number" id="inpgradeLevel" maxlength="2"></input></td>
 		</tr>
 		<tr id="rowEmail">
 			<td id="input"><label for="inpEmail" id="lblEmail">*Input your email: </label></td>
 			<td><input type="text" id="inpEmail"></input></td>
 		</tr>
-		
-			
+		<tr id="rowOSIS">
+			<td id="input"><label for="inpOSIS" id="lblOSIS">*Input your OSIS # (Student ID): </label></td>
+			<td><input type="text" id="inpOSIS"></input></td>
 		</tr>
 	</table>
-	<p>
-	<button type="button" id="btnSubmit">Submit</button>
-	</p>
 	<table>
-		<tr id="rowOutput">
-			<td id="lblOutputFNAME"></td>
-			<td id="lblOutputMINIT"></td>
-			<td id="lblOutputLNAME"></td>
-			<td id="lblOutputSLC"></td>
-			<td id="lblOutputGRADE"></td>
-			<td id="lblOutputEMAIL"></td>
+		<tr id="Header">
+			<th>Course Name</th>
+			<th></th>
+			<th>Course Grade</th>
+		</tr>
+		<tr id="rowCourse1">
+			<td id="input"><label for="inpCourse1" id="lblCourse1">Input the name of your first course: </label></td>
+			<td><input type="text" id="inpCourse1"></input></td>
+			<td id="input"><label for="inpCourse1Grade" id="lblCourse1Grade">Input the grade for your first course: </label></td>
+			<td><input type="text" id="inpCourse1Grade"></input></td>
+		</tr>
+		<tr id="rowCourse2">
+			<td id="input"><label for="inpCourse2" id="lblCourse2">Input the name of your second course: </label></td>
+			<td><input type="text" id="inpCourse2"></input></td>
+			<td id="input"><label for="inpCourse2Grade" id="lblCourse2Grade">Input the grade for your second course: </label></td>
+			<td><input type="text" id="inpCourse2Grade"></input></td>
+		</tr>
+		<tr id="rowCourse3">
+			<td id="input"><label for="inpCourse3" id="lblCourse3">Input the name of your third course: </label></td>
+			<td><input type="text" id="inpCourse3"></input></td>
+			<td id="input"><label for="inpCourse3Grade" id="lblCourse3Grade">Input the grade for your third course: </label></td>
+			<td><input type="text" id="inpCourse3Grade"></input></td>
+		</tr>
+		<tr id="rowCourse4">
+			<td id="input"><label for="inpCourse4" id="lblCourse4">Input the name of your fourth course: </label></td>
+			<td><input type="text" id="inpCourse4"></input></td>
+			<td id="input"><label for="inpCourse4Grade" id="lblCourse4Grade">Input the grade for your fourth course: </label></td>
+			<td><input type="text" id="inpCourse4Grade"></input></td>
+		</tr>
+		<tr id="rowCourse5">
+			<td id="input"><label for="inpCourse5" id="lblCourse5">Input the name of your fifth course: </label></td>
+			<td><input type="text" id="inpCourse5"></input></td>
+			<td id="input"><label for="inpCourse5Grade" id="lblCourse5Grade">Input the grade for your fifth course: </label></td>
+			<td><input type="text" id="inpCourse5Grade"></input></td>
+		</tr>
+		<tr id="rowCourse6">
+			<td id="input"><label for="inpCourse6" id="lblCourse6">Input the name of your sixth course: </label></td>
+			<td><input type="text" id="inpCourse6"></input></td>
+			<td id="input"><label for="inpCourse6Grade" id="lblCourse6Grade">Input the grade for your sixth course: </label></td>
+			<td><input type="text" id="inpCourse6Grade"></input></td>
+		</tr>
+		<tr id="rowCourse7">
+			<td id="input"><label for="inpCourse7" id="lblCourse7">Input the name of your seventh course: </label></td>
+			<td><input type="text" id="inpCourse7"></input></td>
+			<td id="input"><label for="inpCourse7Grade" id="lblCourse7Grade">Input the grade for your seventh course: </label></td>
+			<td><input type="text" id="inpCourse7Grade"></input></td>
+		</tr>
+		<tr id="rowCourse8">
+			<td id="input"><label for="inpCourse8" id="lblCourse8">Input the name of your eighth course: </label></td>
+			<td><input type="text" id="inpCourse8"></input></td>
+			<td id="input"><label for="inpCourse8Grade" id="lblCourse8Grade">Input the grade for your eighth course: </label></td>
+			<td><input type="text" id="inpCourse8Grade"></input></td>
+		</tr>
+	</table>
+	<br>
+	<button type="button" id="btnSubmit">Submit</button>
+
+	<table id="tblOutput">
+		<tr>
+			<th id="Header">General Information</th>
+			<th id="Header">Course Names</th>
+			<th id="Header">Course Grades</th>
+			<th id="Header">Grade Point Average</th>
+		</tr>
+		<tr>
+			<td id="information">This is the output for the user's general information</td>
+		</tr>
+		<tr>
+			<td id="lblOutputFNAME">First Name: </td>
+			<td id="lblOutputCourse1">Course 1: </td>
+			<td id="lblOutputCourse1Grade">Grade: </td>
+			<td id="lblOutputGPA">GPA: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputMINIT">Middle Initial: </td>
+			<td id="lblOutputCourse2">Course 2: </td>
+			<td id="lblOutputCourse2Grade">Grade: </td>
+			<td id="lblOutputLetter">Letter Average: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputLNAME">Last Name: </td>
+			<td id="lblOutputCourse3">Course 3: </td>
+			<td id="lblOutputCourse3Grade">Grade: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputSLC">SLC: </td>
+			<td id="lblOutputCourse4">Course 4: </td>
+			<td id="lblOutputCourse4Grade">Grade: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputGRADE">Grade Level: </td>
+			<td id="lblOutputCourse5">Course 5: </td>
+			<td id="lblOutputCourse5Grade">Grade: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputEMAIL">Email Address: </td>
+			<td id="lblOutputCourse6">Course 6: </td>
+			<td id="lblOutputCourse6Grade">Grade: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputOSIS">OSIS ID: </td>
+			<td id="lblOutputCourse7">Course 7: </td>
+			<td id="lblOutputCourse7Grade">Grade: </td>
+		</tr>
+		<tr>
+			<td id="lblOutputOverallAverage">Overall Average: </td>
+			<td id="lblOutputCourse8">Course 8: </td>
+			<td id="lblOutputCourse8Grade">Grade: </td>
 		</tr>
 	</table>
 </body>
