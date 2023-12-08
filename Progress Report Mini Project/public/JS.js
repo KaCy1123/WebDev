@@ -5,8 +5,8 @@ function Initialize()
 {
 	document.getElementById("inpmiddleInit").disabled = true;
 	document.getElementById("inplastName").disabled = true;
-	document.getElementById("inpSLC").disabled = true;
-	document.getElementById("inpgradeLevel").disabled = true;
+	document.getElementById("cmbSLC").disabled = true;
+	document.getElementById("cmbGrade").disabled = true;
 	document.getElementById("inpEmail").disabled = true;
 	document.getElementById("inpOSIS").disabled = true;
 	document.getElementById("inpCourse1").disabled = true;
@@ -32,8 +32,8 @@ function addListeners()
 {
 	document.getElementById("inpfirstName").addEventListener("keypress",FNAME);
 	document.getElementById("inplastName").addEventListener("keypress",LNAME);
-	document.getElementById("inpSLC").addEventListener("keypress",SLC);
-	document.getElementById("inpgradeLevel").addEventListener("keypress",GRADE);
+	document.getElementById("cmbSLC").addEventListener("click",SLC);
+	document.getElementById("cmbGrade").addEventListener("click",GRADE);
 	document.getElementById("inpEmail").addEventListener("keypress",EMAIL);
 	document.getElementById("inpOSIS").addEventListener("keypress",OSIS);
 	document.getElementById("inpCourse1").addEventListener("keypress",Course1);
@@ -63,12 +63,45 @@ function FNAME()
 
 function LNAME()
 {
-	document.getElementById("inpSLC").disabled = false;
+	document.getElementById("cmbSLC").disabled = false;
 }
 
 function SLC()
 {
-	document.getElementById("inpgradeLevel").disabled = false;
+	var selectedSLC = document.getElementById("cmbSLC").selectedIndex;
+	switch(selectedSLC){
+		case 0:
+			break;
+		case 1:
+			document.getElementById("lblInputtedSLC").textContent = "Pre-Med"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+		case 2:
+			document.getElementById("lblInputtedSLC").textContent = "Humanities Honors Academy"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+		case 3:
+			document.getElementById("lblInputtedSLC").textContent = "Performing and Visual Arts"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+		case 4:
+			document.getElementById("lblInputtedSLC").textContent = "Public Service & Law"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+		case 5:
+			document.getElementById("lblInputtedSLC").textContent = "Teachers of Tomorrow"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+		case 6:
+			document.getElementById("lblInputtedSLC").textContent = "Global Citizens"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+		case 7:
+			alert()
+			document.getElementById("lblInputtedSLC").textContent = "Health Sciences & Software Engineering"
+			document.getElementById("cmbGrade").disabled = false;
+			break;
+	};
 }
 
 function GRADE()
@@ -171,8 +204,10 @@ function OUTPUT()
 	FNAME = document.getElementById("inpfirstName").value;
 	MINIT = document.getElementById("inpmiddleInit").value;
 	LNAME = document.getElementById("inplastName").value;
-	SLC = document.getElementById("inpSLC").value;
-	GRADELVL = document.getElementById("inpgradeLevel").value;
+	SLC = document.getElementById("inpSLC").selectedIndex;
+	
+	GRADELVL = document.getElementById("inpgradeLevel").selectedIndex;
+	
 	EMAIL = document.getElementById("inpEmail").value;
 	OSIS = document.getElementById("inpOSIS").value;
 	Course1 = document.getElementById("inpCourse1").value;

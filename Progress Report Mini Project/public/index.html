@@ -25,12 +25,28 @@
 			<td><input type="text" id="inplastName"></input></td>
 		</tr>
 		<tr id="rowSLC">
-			<td id="input"><label for="inpSLC" id="lblSLC">*Input your SLC: </label></td>
-			<td><input type="text" id="inpSLC"></input></td>
+			<td id="input"><label for="cmbSLC" id="lblSLC">*Input your SLC: </label></td>
+			<td><select id="cmbSLC">
+				<option value></option>
+				<option value>Pre-Med</option>
+				<option value>Humanities Honors Academy</option>
+				<option value>Performing and Visual Arts</option>
+				<option value>Public Service & Law</option>
+				<option value>Teachers of Tomorrow</option>
+				<option value>Global Citizens</option>
+				<option value>Health Sciences and Software Engineering</option>
+				
+			</select></td>
 		</tr>
 		<tr id="rowgradeLevel">
-			<td id="input"><label for="inpgradeLevel" id="lblgradeLevel">*Input your grade level: </label></td>
-			<td><input type="number" id="inpgradeLevel" maxlength="2"></input></td>
+			<td id="input"><label for="cmbGrade" id="lblGrade">*Input your grade level: </label></td>
+			<td><select	id="cmbGrade">
+				<option></option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+			</select></td>
 		</tr>
 		<tr id="rowEmail">
 			<td id="input"><label for="inpEmail" id="lblEmail">*Input your email: </label></td>
@@ -152,5 +168,7 @@
 			<td id="lblOutputCourse8Grade">Grade: </td>
 		</tr>
 	</table>
+	<label id="lblSelectedSLC"></label>
+	<label id="lblSelectedGRADE"></label>
 </body>
 </html>
