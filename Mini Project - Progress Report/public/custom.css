@@ -10,6 +10,7 @@ table{
 #header{
 	text-decoration: underline;
 	font-size: 35px;
+	text-align: center;
 }
 td{
 	font-size: 20px;
@@ -27,4 +28,7 @@ input, select{
 	padding-right: 5px;
 	background-color: #F9F9E0;
 	width: 250px;
+}
+#lblErrorMsg{
+	color: F9F9E0;
 }
