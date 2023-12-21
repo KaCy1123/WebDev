@@ -17,6 +17,7 @@ function Signup()
 	PWORD = document.getElementById("txtPassword").value;
 	localStorage.setItem("Username", UNAME);
 	localStorage.setItem("Password", PWORD);
+	document.getElementById("lblErrorMsg").innerText = "Successfully signed up. Proceed to Login.";
 }
 
 function Login()
