@@ -3,3 +3,8 @@ input[id="txtnumgrade"],[id="txtentgrade"]
 	width:35px;
 	text-align:center;
 }
+
+label[id="lbldisplay"]
+{
+	font-size:30px;
+}
