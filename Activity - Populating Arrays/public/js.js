@@ -14,14 +14,20 @@ function initialize()
 	document.getElementById("divSubjects").style.display = "none";
 	document.getElementById("optDefault").style.display = "none";
 	
-	document.getElementById("btnDisplayFoods").disabled = true;
-	document.getElementById("btnDisplayColors").disabled = true;
-	document.getElementById("btnDisplaySubjects").disabled = true;
 	document.getElementById("btnSubmitOpt").disabled = true;
 	
+	document.getElementById("btnDisplayFoods").disabled = true;
+	document.getElementById("btnSubmitFoodsMany").disabled = true; 
+	document.getElementById("btnSubmitFoodsInput").disabled = true;
+	
+	document.getElementById("btnDisplayColors").disabled = true;
+	document.getElementById("btnDisplaySubjects").disabled = true;
+	
+
 	document.getElementById("cmbSelectOpt").addEventListener("input",SelectOpt);
 	document.getElementById("btnSubmitOpt").addEventListener("click",SubmitOpt);
 	
+	document.getElementById("txtFoodsMany").addEventListener("keyup",foodsmany);
 	document.getElementById("btnSubmitFoodsMany").addEventListener("click",SubmitFoodsMany);
 	document.getElementById("btnSubmitFoodsInput").addEventListener("click",SubmitFoodsInput);
 	document.getElementById("btnDisplayFoods").addEventListener("click",displayFoods);
@@ -34,6 +40,12 @@ function initialize()
 	document.getElementById("btnSubmitSubjectsInput").addEventListener("click",SubmitSubjectsInput);
 	document.getElementById("btnDisplaySubjects").addEventListener("click",displaySubjects);
 }
+
+function foodsmany()
+{
+	document.getElementById("btnSubmitFoodsMany").disabled = false; 
+}
+
 
 function SelectOpt()
 {
