@@ -21,21 +21,30 @@ function initialize()
 	document.getElementById("btnSubmitFoodsInput").disabled = true;
 	
 	document.getElementById("btnDisplayColors").disabled = true;
-	document.getElementById("btnDisplaySubjects").disabled = true;
+	document.getElementById("btnSubmitColorsMany").disabled = true; 
+	document.getElementById("btnSubmitColorsInput").disabled = true;
 	
+	document.getElementById("btnDisplaySubjects").disabled = true;
+	document.getElementById("btnSubmitSubjectsMany").disabled = true; 
+	document.getElementById("btnSubmitSubjectsInput").disabled = true;
 
 	document.getElementById("cmbSelectOpt").addEventListener("input",SelectOpt);
 	document.getElementById("btnSubmitOpt").addEventListener("click",SubmitOpt);
 	
 	document.getElementById("txtFoodsMany").addEventListener("keyup",foodsmany);
+	document.getElementById("txtFoodsInput").addEventListener("keyup",foodsInput);
 	document.getElementById("btnSubmitFoodsMany").addEventListener("click",SubmitFoodsMany);
 	document.getElementById("btnSubmitFoodsInput").addEventListener("click",SubmitFoodsInput);
 	document.getElementById("btnDisplayFoods").addEventListener("click",displayFoods);
 	
+	document.getElementById("txtColorsMany").addEventListener("keyup",colorsmany);
+	document.getElementById("txtColorsInput").addEventListener("keyup",colorsInput);
 	document.getElementById("btnSubmitColorsMany").addEventListener("click",SubmitColorsMany);
 	document.getElementById("btnSubmitColorsInput").addEventListener("click",SubmitColorsInput);
 	document.getElementById("btnDisplayColors").addEventListener("click",displayColors);
 	
+	document.getElementById("txtSubjectsMany").addEventListener("keyup",subjectsmany);
+	document.getElementById("txtSubjectsInput").addEventListener("keyup",subjectsInput);
 	document.getElementById("btnSubmitSubjectsMany").addEventListener("click",SubmitSubjectsMany);
 	document.getElementById("btnSubmitSubjectsInput").addEventListener("click",SubmitSubjectsInput);
 	document.getElementById("btnDisplaySubjects").addEventListener("click",displaySubjects);
@@ -46,6 +55,30 @@ function foodsmany()
 	document.getElementById("btnSubmitFoodsMany").disabled = false; 
 }
 
+function foodsInput()
+{
+	document.getElementById("btnSubmitFoodsInput").disabled = false; 
+}
+
+function colorsmany()
+{
+	document.getElementById("btnSubmitColorsMany").disabled = false; 
+}
+
+function colorsInput()
+{
+	document.getElementById("btnSubmitColorsInput").disabled = false; 
+}
+
+function subjectsmany()
+{
+	document.getElementById("btnSubmitSubjectsMany").disabled = false; 
+}
+
+function subjectsInput()
+{
+	document.getElementById("btnSubmitSubjectsInput").disabled = false; 
+}
 
 function SelectOpt()
 {

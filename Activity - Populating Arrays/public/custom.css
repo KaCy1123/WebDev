@@ -1,3 +1,16 @@
 body{
-	background-color: pink
+	background-color: #FAEED1;
+}
+
+button{
+	background-color: #FAEED1;
+	border: inset #DED0B6 4px;
+}
+
+input, select{
+	padding: 3px;
+}
+
+#divDisplayOutputs{
+	color: #607274;
 }
