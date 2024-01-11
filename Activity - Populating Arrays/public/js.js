@@ -15,6 +15,8 @@ function initialize()
 	document.getElementById("optDefault").style.display = "none";
 	
 	document.getElementById("btnDisplayFoods").disabled = true;
+	document.getElementById("btnDisplayColors").disabled = true;
+	document.getElementById("btnDisplaySubjects").disabled = true;
 	document.getElementById("btnSubmitOpt").disabled = true;
 	
 	document.getElementById("cmbSelectOpt").addEventListener("input",SelectOpt);
@@ -114,6 +116,10 @@ function displayFoods()
 		document.getElementById("divSelect").style.display = "block";
 		document.getElementById("btnSubmitOpt").disabled = true;
 	}
+	else{
+		document.getElementById("divFoods").style.display = "none";
+		document.getElementById("divSelect").style.display = "none";
+	}
 }
 
 function SubmitColorsMany()
@@ -162,6 +168,10 @@ function displayColors()
 		document.getElementById("divColors").style.display = "none";
 		document.getElementById("divSelect").style.display = "block";
 		document.getElementById("btnSubmitOpt").disabled = true;
+	}
+	else{
+		document.getElementById("divColors").style.display = "none";
+		document.getElementById("divSelect").style.display = "none";
 	}
 }
 
@@ -212,4 +222,9 @@ function displaySubjects()
 		document.getElementById("divSelect").style.display = "block";
 		document.getElementById("btnSubmitOpt").disabled = true;
 	}
+	else{
+		document.getElementById("divSubjects").style.display = "none";
+		document.getElementById("divSelect").style.display = "none";
+	}
+	
 }
