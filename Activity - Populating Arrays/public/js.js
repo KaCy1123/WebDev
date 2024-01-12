@@ -52,32 +52,68 @@ function initialize()
 
 function foodsmany()
 {
-	document.getElementById("btnSubmitFoodsMany").disabled = false; 
+	var Check = document.getElementById("txtFoodsMany").value
+	if (Check > 0){
+	document.getElementById("btnSubmitFoodsMany").disabled = false;
+	}
+	else{
+		document.getElementById("btnSubmitFoodsMany").disabled = true;
+	}
 }
 
 function foodsInput()
 {
-	document.getElementById("btnSubmitFoodsInput").disabled = false; 
+	var Check = document.getElementById("txtFoodsInput").value
+	if (Check != ""){
+	document.getElementById("btnSubmitFoodsInput").disabled = false;
+	}
+	else{
+		document.getElementById("btnSubmitFoodsInput").disabled = true;
+	}
 }
 
 function colorsmany()
 {
-	document.getElementById("btnSubmitColorsMany").disabled = false; 
+	var Check = document.getElementById("txtColorsMany").value
+	if (Check > 0){
+	document.getElementById("btnSubmitColorsMany").disabled = false;
+	}
+	else{
+		document.getElementById("btnSubmitColorsMany").disabled = true;
+	}
 }
 
 function colorsInput()
 {
-	document.getElementById("btnSubmitColorsInput").disabled = false; 
+	var Check = document.getElementById("txtColorsInput").value
+	if (Check != ""){
+		document.getElementById("btnSubmitColorsInput").disabled = false;
+	}
+	else{
+		document.getElementById("btnSubmitColorsInput").disabled = true;
+	}
 }
 
 function subjectsmany()
 {
-	document.getElementById("btnSubmitSubjectsMany").disabled = false; 
+	var Check = document.getElementById("txtSubjectsMany").value
+	if (Check > 0){
+	document.getElementById("btnSubmitSubjectsMany").disabled = false;
+	}
+	else{
+		document.getElementById("btnSubmitSubjectsMany").disabled = true;
+	}
 }
 
 function subjectsInput()
 {
-	document.getElementById("btnSubmitSubjectsInput").disabled = false; 
+	var Check = document.getElementById("txtSubjectsInput").value
+	if (Check != ""){
+	document.getElementById("btnSubmitSubjectsInput").disabled = false;
+	}
+	else{
+		document.getElementById("btnSubmitSubjectsInput").disabled = true;
+	}
 }
 
 function SelectOpt()
@@ -91,18 +127,21 @@ function SubmitOpt()
 	switch(option){
 		case "Foods":
 			document.getElementById("divFoods").style.display = "block";
+			document.getElementById("txtFoodsMany").focus();
 			document.getElementById("divFoodsInputs").style.display = "none";
 			document.getElementById("divSelect").style.display = "none";
 			break;
 		
 		case "Colors":
 			document.getElementById("divColors").style.display = "block";
+			document.getElementById("txtColorsMany").focus();
 			document.getElementById("divColorsInputs").style.display = "none";
 			document.getElementById("divSelect").style.display = "none";
 			break;
 		
 		case "Subjects":
 			document.getElementById("divSubjects").style.display = "block";
+			document.getElementById("txtSubjectsMany").focus();
 			document.getElementById("divSubjectsInputs").style.display = "none";
 			document.getElementById("divSelect").style.display = "none";
 			break;
@@ -118,6 +157,7 @@ function SubmitFoodsMany()
 	HowMany = document.getElementById("txtFoodsMany").value;
 	document.getElementById("divFoodsMany").style.display = "none";
 	document.getElementById("divFoodsInputs").style.display = "block";
+	document.getElementById("txtFoodsInput").focus();
 }
 
 function SubmitFoodsInput()
@@ -128,8 +168,8 @@ function SubmitFoodsInput()
 	FoodArray.push(Food);
 	document.getElementById("txtFoodsInput").value = "";
 	document.getElementById("txtFoodsInput").focus();
+	document.getElementById("btnSubmitFoodsInput").disabled = true;
 	if (count == HowMany){
-		document.getElementById("btnSubmitFoodsInput").disabled = true;
 		document.getElementById("btnDisplayFoods").disabled = false;
 		document.getElementById("txtFoodsInput").disabled = true;
 		count = 0;
@@ -172,6 +212,7 @@ function SubmitColorsMany()
 	HowMany = document.getElementById("txtColorsMany").value;
 	document.getElementById("divColorsMany").style.display = "none";
 	document.getElementById("divColorsInputs").style.display = "block";
+	document.getElementById("txtColorsInput").focus();
 }
 
 function SubmitColorsInput()
@@ -182,8 +223,8 @@ function SubmitColorsInput()
 	ColorArray.push(Color);
 	document.getElementById("txtColorsInput").value = "";
 	document.getElementById("txtColorsInput").focus();
+	document.getElementById("btnSubmitColorsInput").disabled = true;
 	if (count == HowMany){
-		document.getElementById("btnSubmitColorsInput").disabled = true;
 		document.getElementById("btnDisplayColors").disabled = false;
 		document.getElementById("txtColorsInput").disabled = true;
 		count = 0;
@@ -225,6 +266,7 @@ function SubmitSubjectsMany()
 	HowMany = document.getElementById("txtSubjectsMany").value;
 	document.getElementById("divSubjectsMany").style.display = "none";
 	document.getElementById("divSubjectsInputs").style.display = "block";
+	document.getElementById("txtSubjectsInput").focus();
 }
 
 function SubmitSubjectsInput()
@@ -235,8 +277,8 @@ function SubmitSubjectsInput()
 	SubjectArray.push(Subject);
 	document.getElementById("txtSubjectsInput").value = "";
 	document.getElementById("txtSubjectsInput").focus();
+	document.getElementById("btnSubmitSubjectsInput").disabled = true;
 	if (count == HowMany){
-		document.getElementById("btnSubmitSubjectsInput").disabled = true;
 		document.getElementById("btnDisplaySubjects").disabled = false;
 		document.getElementById("txtSubjectsInput").disabled = true;
 		count = 0;

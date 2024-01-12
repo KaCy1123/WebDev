@@ -1,5 +1,6 @@
 body{
 	background-color: #FAEED1;
+	text-align: center;
 }
 
 button{
@@ -9,8 +10,10 @@ button{
 
 input, select{
 	padding: 3px;
+	background-color: #FAEEE8;
 }
 
 #divDisplayOutputs{
 	color: #607274;
 }
+
