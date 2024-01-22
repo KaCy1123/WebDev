@@ -1,0 +1,18 @@
+body{
+	background-image: url("background.jpg");
+	text-align: center;
+	color: F5EEE6;
+}
+
+h1{
+	font-size: 50px;
+	transform: translate(0px, 20px);
+}
+
+#lblScore{
+	font-size: 40px
+}
+
+#returnbutton{
+	color: white;
+}
