@@ -100,29 +100,53 @@ function checkq4(){
 }
 
 function submit(){
-	if (q1ROW = "right"){
-		score = score + 1
+	switch(q1ROW){
+		case "right":
+			score = score + 1;
+
+		case "wrong":
+			score = score;
+			break;
+
+		default:
+			score = score;
+			break;
 	}
-	else if (q1ROW = "wrong"){
-		score = score
+	switch(q2ROW){
+		case "right":
+			score = score + 1;
+
+		case "wrong":
+			score = score;
+			break;
+
+		default:
+			score = score;
+			break;
 	}
-	if (q2ROW = "right"){
-		score = score + 1
+	switch(q3ROW){
+		case "right":
+			score = score + 1;
+
+		case "wrong":
+			score = score;
+			break;
+
+		default:
+			score = score;
+			break;
 	}
-	else if (q2ROW = "wrong"){
-		score = score
-	}
-	if (q3ROW = "right"){
-		score = score + 1
-	}
-	else if (q3ROW = "wrong"){
-		score = score
-	}
-	if (q4ROW = "right"){
-		score = score + 1
-	}
-	else if (q4ROW = "wrong"){
-		score = score
+	switch(q4ROW){
+		case "right":
+			score = score + 1;
+
+		case "wrong":
+			score = score;
+			break;
+
+		default:
+			score = score;
+			break;
 	}
 	document.getElementById("btnsubmit").style.display = "none";
 	document.getElementById("lblScore").innerText = "Your score is " + score + "/4"
