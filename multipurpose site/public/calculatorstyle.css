@@ -14,16 +14,25 @@ button{
 	width: 60px;
 	font-size: 20px;
 	background-color: F5EEE6;
-	border: inset;
+	border: solid;
+	border-color: 9a9a9a;
 	color: teal;
 	padding: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: -1px;
+	margin-right: -1px;
 }
-
-#lbloutput{
+#btnzero{
+	width: 122px;
+}
+#txtoutput{
 	background-color: F5EEE6;
 	color: teal;
 	font-size: 20px;
 	padding: 5px;
-	border: inset;
-
+	border: solid;
+	border-color: 9a9a9a;
+	width: 246px;
+	margin-bottom: 1px;
 }
