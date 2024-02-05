@@ -26,6 +26,9 @@ button{
 #btnzero{
 	width: 122px;
 }
+#btnclear{
+	width: 122px;
+}
 #txtoutput{
 	background-color: F5EEE6;
 	color: teal;
@@ -33,6 +36,7 @@ button{
 	padding: 5px;
 	border: solid;
 	border-color: 9a9a9a;
-	width: 246px;
+	width: 308px;
+	height: 40px;
 	margin-bottom: 1px;
 }
