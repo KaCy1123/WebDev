@@ -1,0 +1,42 @@
+body{
+	background-image: url("background.jpg");
+	text-align: center;
+	color: F5EEE6;
+}
+
+h1{
+	font-size: 50px;
+	transform: translate(0px, 20px);
+}
+
+button{
+	height: 60px;
+	width: 60px;
+	font-size: 20px;
+	background-color: F5EEE6;
+	border: solid;
+	border-color: 9a9a9a;
+	color: teal;
+	padding: 5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: -1px;
+	margin-right: -1px;
+}
+#btnzero{
+	width: 122px;
+}
+#btnclear{
+	width: 122px;
+}
+#txtoutput{
+	background-color: F5EEE6;
+	color: teal;
+	font-size: 20px;
+	padding: 5px;
+	border: solid;
+	border-color: 9a9a9a;
+	width: 308px;
+	height: 40px;
+	margin-bottom: 1px;
+}
