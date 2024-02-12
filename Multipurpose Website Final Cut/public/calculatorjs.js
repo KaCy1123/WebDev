@@ -119,7 +119,7 @@ function square(){
 	}
 	else{
 	display = parseFloat(display);
-	display = display^2;
+	display = display**2;
 	}
 	display = String(display);
 	document.getElementById("txtoutput").value = display;
@@ -162,7 +162,7 @@ function divide(){
 				break;
 			
 			case "^":
-				display = num1 ^ display;
+				display = num1 ** display;
 				display = String(display);
 				document.getElementById("txtoutput").value = display;
 				break;
@@ -231,7 +231,7 @@ function exp(){
 				break;
 			
 			case "^":
-				display = num1 ^ display;
+				display = num1 ** display;
 				display = String(display);
 				document.getElementById("txtoutput").value = display;
 				break;
@@ -281,7 +281,7 @@ function multiply(){
 				break;
 			
 			case "^":
-				display = num1 ^ display;
+				display = num1 ** display;
 				display = String(display);
 				document.getElementById("txtoutput").value = display;
 				break;
@@ -362,7 +362,7 @@ function minus(){
 				break;
 			
 			case "^":
-				display = num1 ^ display;
+				display = num1 ** display;
 				display = String(display);
 				document.getElementById("txtoutput").value = display;
 				break;
@@ -451,7 +451,7 @@ function add(){
 				break;
 			
 			case "^":
-				display = num1 ^ display;
+				display = num1 ** display;
 				display = String(display);
 				document.getElementById("txtoutput").value = display;
 				break;
@@ -524,7 +524,7 @@ function equal(){
 				break;
 			
 			case "^":
-				display = num1 ^ display;
+				display = num1 ** display;
 				display = String(display);
 				document.getElementById("txtoutput").value = display;
 				break;

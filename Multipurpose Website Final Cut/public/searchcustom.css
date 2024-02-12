@@ -1,0 +1,41 @@
+body{
+	background-image: url("background.jpg");
+	text-align: center;
+	color: F5EEE6;
+}
+
+h1{
+	font-size: 50px;
+	transform: translate(0px, 20px);
+}
+
+button{
+	height: 25px;
+	width: 60px;
+	font-size: 13px;
+	background-color: F5EEE6;
+	border: solid;
+	border-color: 9a9a9a;
+	color: teal;
+	padding: 2px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+select{
+	font-size: 13px;
+}
+
+#txtoutput{
+	background-color: F5EEE6;
+	color: teal;
+	font-size: 20px;
+	padding: 5px;
+	border: solid;
+	border-color: 9a9a9a;
+	width: 312px;
+	height: 40px;
+	margin-bottom: 2px;
+}
