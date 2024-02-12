@@ -19,15 +19,16 @@ button{
 	color: teal;
 	padding: 5px;
 	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	margin-left: -1px;
 	margin-right: -1px;
 }
 #btnzero{
-	width: 122px;
+	width: 123px;
+	
 }
 #btnclear{
-	width: 122px;
+	width: 123px;
 }
 #txtoutput{
 	background-color: F5EEE6;
@@ -36,7 +37,7 @@ button{
 	padding: 5px;
 	border: solid;
 	border-color: 9a9a9a;
-	width: 308px;
+	width: 312px;
 	height: 40px;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 }
