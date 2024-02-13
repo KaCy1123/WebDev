@@ -84,11 +84,11 @@ function checkq4(){
 	q4Input=document.getElementById("txtQ4").value;
 	switch(q4Input){
 		case "Its head":
-			document.getElementById("btnsubmit").style.display = "block";
+			document.getElementById("submit").style.display = "block";
 			q4ROW="right";
 			break;
 		case " ":
-			document.getElementById("btnsubmit").disabled = true;
+			document.getElementById("submit").disabled = true;
 			q4ROW="wrong";
 			break;
 		default:

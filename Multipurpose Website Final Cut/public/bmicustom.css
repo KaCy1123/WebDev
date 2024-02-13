@@ -1,0 +1,38 @@
+body{
+	background-image: url("background.jpg");
+	text-align: center;
+	color: F5EEE6;
+}
+
+h1{
+	font-size: 50px;
+	transform: translate(0px, 20px);
+}
+
+button{
+	height: 25.5px;
+	width: 80px;
+	font-size: 17px;
+	background-color: F5EEE6;
+	border: solid;
+	border-color: 9a9a9a;
+	color: teal;
+}
+#btnzero{
+	width: 123px;
+	
+}
+#btnclear{
+	width: 123px;
+}
+#txtoutput{
+	background-color: F5EEE6;
+	color: teal;
+	font-size: 20px;
+	padding: 5px;
+	border: solid;
+	border-color: 9a9a9a;
+	width: 312px;
+	height: 40px;
+	margin-bottom: 2px;
+}

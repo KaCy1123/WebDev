@@ -64,7 +64,7 @@ function checkq2(){
 function checkq3(){
 	q3Input=document.getElementById("txtQ3").value;
 	switch(q3Input){
-		case "63":
+		case "144":
 			document.getElementById("Q4").style.display = "block";
 			q3ROW="right";
 			break;
@@ -83,12 +83,12 @@ function checkq3(){
 function checkq4(){
 	q4Input=document.getElementById("txtQ4").value;
 	switch(q4Input){
-		case "144":
-			document.getElementById("btnsubmit").style.display = "block";
+		case "0":
+			document.getElementById("submit").style.display = "block";
 			q4ROW="right";
 			break;
 		case " ":
-			document.getElementById("btnsubmit").disabled = true;
+			document.getElementById("submit").disabled = true;
 			q4ROW="wrong";
 			break;
 		default:
